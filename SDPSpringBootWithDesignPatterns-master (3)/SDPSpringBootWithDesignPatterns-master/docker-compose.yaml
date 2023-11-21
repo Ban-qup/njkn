@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: "ecommercedb"
+      POSTGRES_USER: "root"
+      POSTGRES_PASSWORD: "0000"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    volumes:
+      - db1:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+volumes:
+  db1:
+    driver: local

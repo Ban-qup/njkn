@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecommerceapplicationspring.controller.ProductController">
+    <top>
+        <HBox spacing="10">
+            <Text text="Product List" />
+            <Button text="Add New Product" onAction="#addNewProduct" />
+        </HBox>
+    </top>
+    <center>
+        <VBox spacing="10">
+            <ListView fx:id="productListView" />
+        </VBox>
+    </center>
+</BorderPane>
